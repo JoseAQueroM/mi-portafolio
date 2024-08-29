@@ -1,0 +1,214 @@
+:root {
+    --primary-azul: #56B3FA;
+  }
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/Inconsolata.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'MerriweatherItalic';
+    src: url('../fonts/MerriweatherSans-Italic-VariableFont_wght.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'MerriweatherSans';
+    src: url('../fonts/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@media (max-width: 600px) {
+    .titleHomeContainer {
+        padding: 1rem 5rem !important;
+    }
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, #141e30, #243b55); 
+    background-size: cover;
+}
+
+
+
+.navbarContainer{
+    border: none;
+    display: flex;
+    justify-content: end;
+    margin: auto 25px;
+}
+
+.navbarLink .linkHeader{
+    transition: .2s;
+    font-weight: 700;
+    margin-left: 25px;
+    padding: 10px 15px;
+    color: var(--primary-azul);
+    margin-right: 15px;
+    font-family: 'Inconsolata';
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.navbarLink .linkHeader:hover{
+    color: #0091ff;
+}
+
+
+.upToHome{
+    display: none;
+    box-shadow: -1px 0px 5px 9px rgba(21,114,166,0.48);
+    background-color: rgb(23, 211, 218);
+    padding: 5px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.homeContainer{
+    height: 100vh;
+}
+
+.titleHomeContainer{
+    padding: 10rem 15rem;
+}
+
+.title-Name-Container{
+
+    font-size: 4rem;
+}
+
+.title-Page{
+    color: var(--primary-azul);
+    font-size: 3rem;
+    margin-right: 15px;
+    font-family: 'Inconsolata';
+    letter-spacing: 2px;
+}
+
+.name-Page{
+    color: rgba(255, 255, 255, 0.885);
+    font-size: 6rem;
+    font-family: 'Merriweather' ,monospace;
+    font-weight: bolder;
+    
+}
+
+.h3-Page{
+    color: rgb(164, 158, 158);
+    font-size: 4.5rem;
+    font-family: 'Merriweather' ,monospace;
+    font-weight: bolder;
+    line-height: 50px;
+}
+
+.h4-Page{
+    font-size: 1.6rem;
+    color: rgb(164, 158, 158);
+}
+
+.buttonHome{
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 3px rgba(26,125,196,0.75) solid;
+    transition: .3s;
+    text-decoration: none;
+    box-shadow: 12px 10px 5px 3px rgba(0,0,0,0.75);
+}
+
+
+.buttonHome:hover{
+    box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
+    border-radius: 15px;
+    color: white;
+}
+
+.linearHomeContainer{
+    border-bottom: 1px white solid;
+    width: 50%;
+    transition: .5s;
+    margin: 55px auto;
+}
+
+.principalInfoContainer{
+    margin: 80px 0;
+}
+
+.aboutImgContainer{
+    height: 600px;
+    text-align: center;
+    transition: .5s;
+    background-image: url(../img/programmer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.aboutImgContainer:hover{
+    box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
+}
+
+.aboutInfoContainer{
+    background-color:#273036;
+    height: 600px;
+    color: white;
+    text-align: center;
+    transition: .5s;
+    box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
+}
+
+.aboutInfoContainer:hover{
+    border-radius: 100px;
+}
+
+.titleAboutInfo{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 25px;
+}
+
+.pAboutInfo{
+    padding: 25px;
+    font-size: 1.8rem;
+}
+
+.footerContainer{
+    background-color:#273036;
+    height: 440px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.titleFooter{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.iconsFooter{
+    height: 50px;
+    margin: 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.iconsFooter:hover{
+    border-bottom: 5px rgba(18, 128, 207, 0.75) solid;
+}
+
