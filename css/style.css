@@ -17,6 +17,7 @@
     src: url('../fonts/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
 } 
 
+
 *{
     padding: 0;
     margin: 0;
@@ -25,12 +26,7 @@
 
 html{
     font-size: 62.5%;
-}
-
-@media (max-width: 600px) {
-    .titleHomeContainer {
-        padding: 1rem 5rem !important;
-    }
+    
 }
 
 body{
@@ -39,7 +35,9 @@ body{
     background-size: cover;
 }
 
-
+main{
+    padding: 0rem 5rem;
+}
 
 .navbarContainer{
     border: none;
@@ -64,11 +62,18 @@ body{
     color: #0091ff;
 }
 
+.navbarButton{
+    background-color: var(--primary-azul);
+}
+
+.toggle-Container{
+    background-color: var(--primary-azul);
+}
+
 
 .upToHome{
     display: none;
-    box-shadow: -1px 0px 5px 9px rgba(21,114,166,0.48);
-    background-color: rgb(23, 211, 218);
+    background-color: var(--primary-azul);
     padding: 5px;
     height: 40px;
     color: white;
@@ -78,113 +83,130 @@ body{
     bottom: 15px;
 }
 
-.homeContainer{
-    height: 100vh;
+.home-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
 }
 
-.titleHomeContainer{
-    padding: 10rem 15rem;
-}
-
-.title-Name-Container{
-
-    font-size: 4rem;
-}
-
-.title-Page{
+.title-page {
     color: var(--primary-azul);
     font-size: 3rem;
     margin-right: 15px;
     font-family: 'Inconsolata';
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
 
-.name-Page{
+.name-page {
     color: rgba(255, 255, 255, 0.885);
     font-size: 6rem;
-    font-family: 'Merriweather' ,monospace;
+    font-family: 'Merriweather', monospace;
     font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+}
+
+.h3-page {
+    color: var(--primary-azul);
+    font-size: 4rem;
+    font-family: 'Merriweather', monospace;
+    font-weight: bolder;
+    line-height: 50px;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+}
+
+.h4-page {
+    font-size: 1.6rem;
+    color: rgb(164, 158, 158);
+    line-height: 2.3rem;
     
 }
 
-.h3-Page{
-    color: rgb(164, 158, 158);
-    font-size: 4.5rem;
-    font-family: 'Merriweather' ,monospace;
-    font-weight: bolder;
-    line-height: 50px;
-}
-
-.h4-Page{
-    font-size: 1.6rem;
-    color: rgb(164, 158, 158);
-}
-
 .buttonHome{
+    margin-top: 25px;
     font-size: 2rem;
     color: white;
     background-color: transparent;
     padding: 10px 20px;
-    border: 3px rgba(26,125,196,0.75) solid;
+    border: 1px var(--primary-azul) solid;
     transition: .3s;
     text-decoration: none;
-    box-shadow: 12px 10px 5px 3px rgba(0,0,0,0.75);
-}
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: .2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 
+}
 
 .buttonHome:hover{
     box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
     border-radius: 15px;
     color: white;
 }
+.line-Padding{
+    padding: 0rem 17.9rem;
+}
 
 .linearHomeContainer{
     border-bottom: 1px white solid;
-    width: 50%;
     transition: .5s;
-    margin: 55px auto;
+    margin-bottom: 5rem;
 }
 
-.principalInfoContainer{
-    margin: 80px 0;
-}
-
-.aboutImgContainer{
-    height: 600px;
-    text-align: center;
-    transition: .5s;
-    background-image: url(../img/programmer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.aboutImgContainer:hover{
-    box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
-}
-
-.aboutInfoContainer{
-    background-color:#273036;
-    height: 600px;
+.experience-Container{
+    padding: 0 9rem;
     color: white;
-    text-align: center;
-    transition: .5s;
-    box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
 }
 
-.aboutInfoContainer:hover{
-    border-radius: 100px;
+.linea-Experience{
+    border-left: 1px gray solid;
+    padding-left: 1rem;
 }
 
-.titleAboutInfo{
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 25px;
+.title-Experience{
+    margin-bottom: 3rem;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: 'Merriweather', monospace;
+    font-weight: bolder;
+    line-height: 6rem;
+    letter-spacing: .2rem;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
 
-.pAboutInfo{
-    padding: 25px;
+.title-Job-Experience{
+    font-size: 2.5rem;
+    color: var(--primary-azul);
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    font-family: 'Insolata', monospace;
+
+}
+
+.empresa-Experience{
     font-size: 1.8rem;
+    color: whitesmoke;
+    line-height: 2.3rem;
+    letter-spacing: .1rem;
+
+}
+
+.p-Title-Experience{
+    font-size: 1.5rem;
+    color: rgb(189, 181, 181);
+    line-height: 2.3rem;
+    letter-spacing: .1rem;
+
+}
+
+.description-Experience{
+    font-size: 1.8rem;
+    color: rgb(226, 223, 223);
+    line-height: 2.3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
 }
 
 .footerContainer{
@@ -212,3 +234,52 @@ body{
     border-bottom: 5px rgba(18, 128, 207, 0.75) solid;
 }
 
+
+@media (max-width: 768px) {
+    
+    .home-container{
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    .name-page{
+        font-size: 4.2rem ;
+    }
+
+    .h3-page{
+        font-size: 3rem;
+    }
+
+    .h4-page{
+        font-size: 1.5rem;
+    }
+
+    .line-Padding{
+        padding: 0 2.1rem;
+    }
+
+    .experience-Container{
+        padding: 0rem .1rem;
+    }
+
+    .title-Experience{
+        font-size: 2.8rem;
+    }
+
+    .title-Job-Experience{
+        font-size: 2.3rem;
+    }
+
+    .empresa-Experience{
+        font-size: 1.7rem;
+    }
+
+    .p-Title-Experience{
+        font-size: 1.4rem;
+    }
+
+    .description-Experience{
+        font-size: 1.5rem;
+    }
+
+}
