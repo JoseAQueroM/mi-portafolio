@@ -1,5 +1,7 @@
 :root {
     --primary-azul: #56B3FA;
+    --secundary-azul: #20417d;
+    --third-azul: #172c54;
   }
 
 @font-face {
@@ -31,7 +33,15 @@ html{
 
 body{
     height: 100%;
-    background: linear-gradient(to bottom, #141e30, #243b55); 
+    background-image: linear-gradient(
+        to bottom right,
+        #233a64, /* Color más oscuro */
+        #111f39, /* Color medio */
+        #233a64 /* Color más claro */
+    ),
+    radial-gradient(circle at 10% 10%, #111f39, transparent),
+    radial-gradient(circle at 15% 15%, #111f39, transparent);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -42,8 +52,7 @@ main{
 .navbarContainer{
     border: none;
     display: flex;
-    justify-content: end;
-    margin: auto 25px;
+    justify-content: center;
 }
 
 .navbarLink .linkHeader{
@@ -54,7 +63,7 @@ main{
     color: var(--primary-azul);
     margin-right: 15px;
     font-family: 'Inconsolata';
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 2rem;
 }
 
@@ -95,7 +104,7 @@ main{
     color: var(--primary-azul);
     font-size: 3rem;
     margin-right: 15px;
-    font-family: 'Inconsolata';
+    font-family: 'Inconsolata', monospace;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
@@ -103,7 +112,7 @@ main{
 .name-page {
     color: rgba(255, 255, 255, 0.885);
     font-size: 6rem;
-    font-family: 'Merriweather', monospace;
+    font-family: 'Merriweather',monospace;
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
@@ -143,7 +152,19 @@ main{
     box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
     border-radius: 15px;
     color: white;
+    transform: scale(1.05);
 }
+
+.iconsHome{
+    height: 40px; 
+    color: rgb(248, 246, 246);
+    transition: .5s;
+}
+
+.iconsHome:hover{
+    transform: scale(1.15);
+}
+
 .line-Padding{
     padding: 0rem 17.9rem;
 }
@@ -181,8 +202,7 @@ main{
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
     font-weight: bolder;
     letter-spacing: .1rem;
-    font-family: 'Insolata', monospace;
-
+    font-family: 'Merriweather', monospace;
 }
 
 .empresa-Experience{
@@ -198,7 +218,6 @@ main{
     color: rgb(189, 181, 181);
     line-height: 2.3rem;
     letter-spacing: .1rem;
-
 }
 
 .description-Experience{
@@ -209,10 +228,110 @@ main{
     
 }
 
+.projects-Container{
+    margin: 15rem 1rem;
+}
+
+.projects-Row-Container{
+    
+    padding: 0 9rem;
+    color: white;
+    margin-top: 15rem;
+}
+
+.title-Projects{
+    
+    margin-bottom: 3rem;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: 'Merriweather', monospace;
+    font-weight: bolder;
+    line-height: 6rem;
+    letter-spacing: .2rem;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    
+}
+
+.card-Container{
+    background-color: var(--third-azul);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25),
+                0 10px 15px rgba(0, 0, 0, 0.15);  
+    border-radius: 1rem;
+    transition: .3s;
+    border: 1px #273036 solid;
+}
+
+.card-Container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3),
+              0 10px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.title-Project{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.885);
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    font-family: 'Merriweather', monospace;
+}
+
+.span-Point{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-azul);
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    font-family: 'Merriweather', monospace;
+}
+
+.project-Description{
+    font-size: 1.4rem;
+    color: rgba(239, 235, 235, 0.885);
+    line-height: 2.3rem;
+    letter-spacing: .1rem;
+}
+
+.card-img-top{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.code-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: .7rem;
+    color: white;
+    border: 1px var(--primary-azul) solid; 
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+}
+
+.button-content svg {
+    margin-right: 5px;
+}
+
+.button-content span {
+    font-weight: bold;
+}
+
+.code-button:hover {
+    background-color: var(--secundary-azul);
+    color: whitesmoke;
+}
+
 .footerContainer{
-    background-color:#273036;
-    height: 440px;
-    padding-top: 50px;
+    background-color:#273036;;
+    padding: 5rem 0rem;
     text-align: center;
 }
 
@@ -224,7 +343,7 @@ main{
 }
 
 .iconsFooter{
-    height: 50px;
+    height: 60px;
     margin: 25px;
     transition: .5s;
     cursor: pointer;
@@ -237,9 +356,15 @@ main{
 
 @media (max-width: 768px) {
     
+
+    main{
+        padding-left: 4rem;
+        padding-right: 2rem;
+    }
+
     .home-container{
         height: 100vh;
-        padding-bottom: 0;
+        
     }
 
     .name-page{
@@ -258,12 +383,13 @@ main{
         padding: 0 2.1rem;
     }
 
-    .experience-Container{
+    .title-Exp{
         padding: 0rem .1rem;
     }
 
     .title-Experience{
-        font-size: 2.8rem;
+        font-size: 3rem;
+        
     }
 
     .title-Job-Experience{
@@ -282,4 +408,18 @@ main{
         font-size: 1.5rem;
     }
 
+    .experience-Container{
+        padding: 0 ;
+        color: white;
+    }
+
+    .projects-Row-Container{
+        padding: 0 ;
+        color: white;
+    }
+
+    .title-Projects{
+        font-size: 3.2rem;
+        
+    }
 }
