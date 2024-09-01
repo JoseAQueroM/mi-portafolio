@@ -61,7 +61,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: auto;
     padding: 1rem 2rem;
     transition: background-color 0.3s ease;
@@ -84,8 +83,8 @@ main{
 .navbar-Button {
     border: none;
     cursor: pointer;
-    padding: 1rem 3rem;
-    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
     background-color: none;
     list-style: none;  
     text-decoration: none;  
@@ -375,9 +374,13 @@ main{
         padding-right: 2rem;
     }
 
+    .navbar-Container{
+        padding: 1rem 5rem;
+    }
+
     .navbar-Button{
-        font-size: 1.5rem;
-        padding: 1rem 1rem;
+        font-size: 1.3rem;
+        padding: 1rem .8rem;
         letter-spacing: 0;
     }
 
