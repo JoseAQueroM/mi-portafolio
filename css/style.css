@@ -34,14 +34,16 @@ body{
     height: 100%;
     background-image: linear-gradient(
         to bottom right,
-        #233a64, /* Color más oscuro */
-        #111f39, /* Color medio */
-        #233a64 /* Color más claro */
+        #1c2d4b, /* Color más oscuro */
+        #0d1629, /* Color medio */
+        #1c2d4b /* Color más claro */
     ),
     radial-gradient(circle at 10% 10%, #111f39, transparent),
     radial-gradient(circle at 15% 15%, #111f39, transparent);
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-behavior: smooth;
+
 }
 
 main{
@@ -78,12 +80,13 @@ main{
 .navbar-Links.scrolled {
     background-color: rgba(39, 71, 103, 0.8);
     border: 1px gray solid;
-    box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);}
+    box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);
+}
 
 .navbar-Button {
     border: none;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1.5rem;
     background-color: none;
     list-style: none;  
@@ -104,22 +107,24 @@ main{
 
 .upToHome{
     display: none;
-    background-color: var(--primary-azul);
-    padding: 5px;
+    border: 1px var(--primary-azul) solid;
+    padding: .5rem;
     height: 40px;
     color: white;
     cursor: pointer;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 10px;
+    bottom: 25px;
+    border-radius: .5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3),
+                0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .home-container {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10rem;
     animation: fadeIn 1s ease;
 }
 
@@ -205,9 +210,8 @@ main{
     animation: slideInRight 1s ease;
 }
 
-.linea-Experience{
-    border-left: 1px gray solid;
-    padding-left: 1rem;
+.experience-Container-Info{
+    margin-bottom: 8rem;
 }
 
 .title-Experience{
@@ -246,11 +250,18 @@ main{
 }
 
 .description-Experience{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: rgb(226, 223, 223);
     line-height: 2.3rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     
+}
+
+.description-Experience-Last{
+    font-size: 1.6rem;
+    color: rgb(226, 223, 223);
+    line-height: 2.3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projects-Container{
@@ -354,6 +365,45 @@ main{
     color: whitesmoke;
 }
 
+.about-Container{
+        margin: 1rem 4rem;
+}
+
+.aboutMe-Row-Container{
+    padding: 0 9rem;
+    color: white;
+    margin-top: 15rem;
+}
+
+.title-AboutMe{
+    padding: 2rem 0;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.885);
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    font-family: 'Merriweather', monospace;
+}
+
+.aboutMe-Image-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe-Image{
+    height: 25rem;
+}
+
+.p-AboutMe{
+    font-size: 1.5rem;
+    color: rgb(209, 205, 205);
+    line-height: 2.3rem;
+    letter-spacing: .1rem;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+
+}
+
 .footerContainer{
     padding: 3rem;
     
@@ -371,7 +421,7 @@ main{
 
     main{
         padding-left: 4rem;
-        padding-right: 2rem;
+        padding-right: 4rem;
     }
 
     .navbar-Container{
@@ -379,13 +429,19 @@ main{
     }
 
     .navbar-Button{
-        font-size: 1rem;
-        padding: 1rem 1.2rem;
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
         letter-spacing: 0;
     }
 
+    
+    .upToHome{
+        padding: .5rem;
+        height: 30px;
+    }
+
     .home-container{
-        height: 100vh;
+        height: 95vh;
         
     }
 
@@ -394,7 +450,7 @@ main{
     }
 
     .h3-page{
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     .h4-page{
@@ -405,6 +461,21 @@ main{
         padding: 0 2.1rem;
     }
 
+    .experience-Container-Info{
+        margin-bottom: 3rem;
+    }
+
+    .description-Experience{
+        margin-bottom: 8rem;
+    }
+
+    .description-Experience-Last{
+        font-size: 1.5rem;
+        color: rgb(226, 223, 223);
+        line-height: 2.3rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    
     .title-Exp{
         padding: 0rem .1rem;
     }
@@ -443,5 +514,18 @@ main{
     .title-Projects{
         font-size: 3.2rem;
         
+    }
+
+    .title-AboutMe{
+        font-size: 3.2rem;
+    }
+
+    .aboutMe-Row-Container{
+        padding: 0 ;
+        color: white;
+    }
+
+    .row{
+        --bs-gutter-x: 0rem !important;
     }
 }
