@@ -375,11 +375,11 @@ main{
     }
 
     .navbar-Container{
-        padding: 1rem 5rem;
+        padding: 1rem 6rem;
     }
 
     .navbar-Button{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 1rem .8rem;
         letter-spacing: 0;
     }
