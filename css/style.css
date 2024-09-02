@@ -157,9 +157,9 @@ main{
 
 .h4-page {
     font-size: 1.6rem;
-    color: rgb(164, 158, 158);
+    color: rgb(156 163 175);
     line-height: 2.3rem;
-    
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
 
 .buttonHome{
@@ -243,8 +243,8 @@ main{
 }
 
 .p-Title-Experience{
-    font-size: 1.5rem;
-    color: rgb(189, 181, 181);
+    font-size: 1.6rem;
+    color: rgb(156 163 175);
     line-height: 2.3rem;
     letter-spacing: .1rem;
 }
@@ -387,12 +387,13 @@ main{
 
 .aboutMe-Image-Container{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .aboutMe-Image{
-    height: 25rem;
+    height: 22.5rem;
 }
 
 .p-AboutMe{
@@ -401,7 +402,10 @@ main{
     line-height: 2.3rem;
     letter-spacing: .1rem;
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+}
 
+.strong-AboutMe{
+    color: var(--primary-azul);
 }
 
 .footerContainer{
@@ -446,7 +450,7 @@ main{
     }
 
     .name-page{
-        font-size: 4.2rem ;
+        font-size: 4rem ;
     }
 
     .h3-page{
@@ -523,6 +527,14 @@ main{
     .aboutMe-Row-Container{
         padding: 0 ;
         color: white;
+    }
+
+    .aboutMe-Image-Container{
+        margin-bottom: 4rem;
+    }
+
+    .p-AboutMe{
+        font-size: 1.3rem;
     }
 
     .row{
