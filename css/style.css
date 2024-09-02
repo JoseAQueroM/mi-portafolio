@@ -304,7 +304,8 @@ main{
     
 }
 
-.title-Project{
+.title-Containers{
+    margin-bottom: 2rem;
     padding-top: 2rem;
     font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.885);
@@ -542,13 +543,13 @@ main{
         padding: 0rem .1rem;
     }
 
-    .title-Experience{
-        font-size: 3rem;
+    .title-Containers{
+        font-size: 2rem;
         
     }
 
     .title-Job-Experience{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .empresa-Experience{
@@ -574,12 +575,12 @@ main{
     }
 
     .title-Projects{
-        font-size: 3.2rem;
+        font-size: 2rem;
         
     }
 
     .title-AboutMe{
-        font-size: 3.2rem;
+        font-size: 2rem;
     }
 
     .aboutMe-Row-Container{
