@@ -116,8 +116,13 @@ main{
     right: 10px;
     bottom: 25px;
     border-radius: .5rem;
+    transition: .5s;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3),
                 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.upToHome:hover{
+    transform: scale(1.05);
 }
 
 .home-container {

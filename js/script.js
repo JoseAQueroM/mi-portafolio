@@ -17,7 +17,7 @@ const nameLetras = (elemento, texto , i = 0) => {
         
         nameLetras(nameId, texto, i + 1);
 
-    }, 80);
+    }, 100);
 }
 
 nameLetras(nameId,texto);
