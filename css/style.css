@@ -166,8 +166,8 @@ main{
     margin-top: 25px;
     font-size: 2rem;
     color: white;
+    padding: .5rem 1rem;
     background-color: transparent;
-    padding: 1rem 1.5rem;
     border: 1px var(--primary-azul) solid;
     transition: .3s;
     text-decoration: none;
@@ -279,7 +279,7 @@ main{
     
     margin-bottom: 3rem;
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: 2.6rem;
     font-family: 'Merriweather', monospace;
     font-weight: bolder;
     line-height: 6rem;
@@ -307,7 +307,7 @@ main{
 .title-Containers{
     margin-bottom: 2rem;
     padding-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     color: rgba(255, 255, 255, 0.885);
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
     font-weight: bolder;
