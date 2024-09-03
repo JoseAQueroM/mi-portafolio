@@ -520,7 +520,7 @@ main{
 
 ::placeholder{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-left: .5rem;
 }
 
@@ -528,7 +528,7 @@ main{
     margin-top: 25px;
     font-size: 2rem;
     color: white;
-    padding: .5rem .5rem;
+    padding: .5rem .7rem;
     background-color: transparent;
     border: 1px var(--primary-azul) solid;
     transition: .3s;
@@ -536,7 +536,6 @@ main{
     font-family: 'Inconsolata', monospace;
     letter-spacing: .2rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    animation: bounce .9s;
 }
 
 .button-Enviar:hover{
@@ -687,6 +686,16 @@ main{
         margin-top: 15rem;
     }
 
+    ::placeholder{
+        color: white;
+        font-size: 1.1rem;
+        padding-left: .1rem;
+    }
+
+    .button-Enviar{
+        padding: 0;
+    }
+    
     .row{
         --bs-gutter-x: 0rem !important;
     }
