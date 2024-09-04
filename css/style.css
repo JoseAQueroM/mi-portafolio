@@ -505,8 +505,7 @@ main{
 
 .label-Title{
     font-size: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 1.2rem;
+    margin-top: 2rem;
 }
 
 .input-Contact{
@@ -517,6 +516,7 @@ main{
     color: white;
     padding-left: 1rem;
     font-size: 1.6rem;
+    margin-top: 2rem;
 }
 
 .input-Contact:focus{
@@ -528,6 +528,12 @@ main{
     font-size: 1.3rem;
     padding-left: .5rem;
 }
+
+textarea{
+    resize: none;
+    height: 10rem !important;
+}
+
 
 .button-Enviar{
     margin-top: 25px;
