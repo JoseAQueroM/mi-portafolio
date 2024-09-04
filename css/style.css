@@ -113,7 +113,7 @@ main{
     color: white;
     cursor: pointer;
     position: fixed;
-    right: 10px;
+    right: 6px;
     bottom: 25px;
     border-radius: .5rem;
     transition: .5s;
@@ -567,8 +567,8 @@ main{
     
 
     main{
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .navbar-Container{
