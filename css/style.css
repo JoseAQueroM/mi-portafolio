@@ -27,6 +27,8 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 
 header{
@@ -39,31 +41,32 @@ header{
 }
 
 body{
-
     background-color: #13203d !important;
     background-repeat: no-repeat;
     background-size: cover;
-   
-    
 }
 
 .navbar-Container {
     display: flex;
     justify-content:end;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
-.navbar-Links {
-    height: 3rem;
-    border-radius: 2rem;
+.img-Navbar{
+    height: 4rem;
+    transition: .5s;
+}
+
+.img-Navbar:hover{
+    transform: scale(1.1);
 }
 
 .navbar-Button {
     border: none;
     cursor: pointer;
-    padding: 1rem 1rem;
-    font-size: 1.5rem;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
     background-color: none;
     list-style: none;  
     text-decoration: none;  
@@ -73,8 +76,8 @@ body{
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
 }
 
-.navbar-Button.active {
-    color: #007bff; 
+.navbar-Button.active{
+    color: var(--primary-azul);
 }
 
 .navbar-Button:hover {
@@ -87,6 +90,7 @@ body{
     height: 3rem;
     width: 3rem;
     padding: 0 !important;
+    
 }
 
 .navbar-toggler-icon{
@@ -540,6 +544,8 @@ textarea{
 
     .off-Canvas{
         background-color: var(--third-azul) !important;
+        
+      
     }
 
     .navbar-Button{

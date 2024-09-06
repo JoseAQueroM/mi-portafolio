@@ -6,6 +6,7 @@ window.addEventListener('beforeunload', function(e) {
   });
 
   
+  
 const nameId = document.getElementById('nameId');
 let texto = 'Jose Quero';
 
