@@ -17,7 +17,75 @@
 
 <header>
 
-    <nav class="navbar">
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+            <img src="./img/Logo.png" height="40rem" alt="" srcset="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon "></span>
+
+          </button>
+          
+            <div class="offcanvas offcanvas-end off-Canvas" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            
+                <div class="offcanvas-header off-Canvas-Header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jose Quero</h5>
+                    <button type="button" class="button-Close" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 6l-12 12" />
+                            <path d="M6 6l12 12" />
+                          </svg>
+
+                    </button>
+                </div>
+
+
+                <div class="navbar-Container">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                      <a class="navbar-Button" href="#experiencia">Experiencia</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="navbar-Button" href="#proyectos">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="navbar-Button" href="#sobremi">Sobre mi</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="navbar-Button" href="#contacto">Contacto</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            ...
+            </div>
+         </nav> -->
+
+    <!-- <nav class="navbar">
         <div class="navbar-Container fixed-top">
             <div class="navbar-Links">
                 <a class="navbar-Button" href="#experiencia">Experiencia</a>
@@ -26,7 +94,7 @@
                 <a class="navbar-Button" href="#contacto">Contacto</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 </header>
 
@@ -35,8 +103,8 @@
 
         <!--HOME-->
 
-        <div class="container-fluid home-container" data-aos="zoom-in">
-                <div class="row align-items-center justify-content-center">
+        <div class="container home-container" data-aos="zoom-in">
+                <div class="row">
                     <div class="col-12 col-md-9">
                         <div class="title-home-container text-start">
                             <h1 class="title-page">Hola, soy</h1>
@@ -611,8 +679,6 @@
 
                     <form action="https://formspree.io/f/xdknjaba" method="post">
 
-                        <div class="row">
-
                         <div class="contact-Form p-5">
                                 <label class="label-Title"       for="">Nombre</label>
                                 <input class="input-Contact"     type="text" name="name" placeholder="Ingresa tu nombre" required>
@@ -625,7 +691,7 @@
                     
                                 <button type="submit" class="button-Enviar col-md-3 col-6">Enviar</button>           
                             </div>
-                        </div>
+            
                     </form>
                 </div>
 

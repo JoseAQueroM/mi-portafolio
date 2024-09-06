@@ -27,60 +27,36 @@
 
 html{
     font-size: 62.5%;
-    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #13203d;
+    top: 0;
+    z-index: 1;
+
 }
 
 body{
-    height: 100%;
-    background-image: linear-gradient(
-        to bottom right,
-        #1c2d4b, /* Color más oscuro */
-        #0d1629, /* Color medio */
-        #1c2d4b /* Color más claro */
-    ),
-    radial-gradient(circle at 10% 10%, #111f39, transparent),
-    radial-gradient(circle at 15% 15%, #111f39, transparent);
+
+    background-color: #13203d !important;
     background-repeat: no-repeat;
     background-size: cover;
-    scroll-behavior: smooth;
-
-}
-
-main{
-    padding: 0rem 5rem;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: none;
+   
+    
 }
 
 .navbar-Container {
     display: flex;
-    justify-content: center;
+    justify-content:end;
     align-items: center;
-    margin: auto;
     padding: 1rem 2rem;
-    transition: background-color 0.3s ease;
 }
 
 .navbar-Links {
     height: 3rem;
     border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-Links.scrolled {
-    background-color: rgba(39, 71, 103, 0.8);
-    border: 1px gray solid;
-    box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);
 }
 
 .navbar-Button {
@@ -105,6 +81,25 @@ main{
     color: #4a91c8;
 }
 
+.navbar-toggler{
+    border: 1px var(--primary-azul) solid !important;
+    background: none;
+    height: 3rem;
+    width: 3rem;
+    padding: 0 !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2886, 179, 250, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+} 
+
+.button-Close{
+    background: none;
+    border: none;
+    margin: calc(-.5* var(--bs-offcanvas-padding-y)) calc(-.5* var(--bs-offcanvas-padding-x)) calc(-.5* var(--bs-offcanvas-padding-y)) auto;
+    padding: calc(var(--bs-offcanvas-padding-y)* .5) calc(var(--bs-offcanvas-padding-x)* .5);;
+}
+
 .upToHome{
     display: none;
     border: 1px var(--primary-azul) solid;
@@ -126,11 +121,10 @@ main{
 }
 
 .home-container {
-    height: 90vh;
+    margin-top: 5rem;
+    height: 85vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    animation: fadeIn 1s ease;
 }
 
 .title-page {
@@ -199,22 +193,6 @@ main{
     transform: scale(1.15);
 }
 
-.line-Padding{
-    padding: 0rem 17.9rem;
-}
-
-.linearHomeContainer{
-    border-bottom: 1px white solid;
-    transition: .5s;
-    margin-bottom: 5rem;
-}
-
-.experience-Container{
-    padding: 0 9rem;
-    color: white;
-    animation: slideInRight 1s ease;
-}
-
 .experience-Container-Info{
     margin-bottom: 8rem;
 }
@@ -267,17 +245,6 @@ main{
     color: rgb(226, 223, 223);
     line-height: 2.3rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.projects-Container{
-    margin: 1rem 4rem;
-}
-
-.projects-Row-Container{
-    
-    padding: 0 9rem;
-    color: white;
-    margin-top: 15rem;
 }
 
 .title-Projects{
@@ -388,16 +355,6 @@ main{
     color: whitesmoke;
 }
 
-.about-Container{
-        margin: 1rem 4rem;
-}
-
-.aboutMe-Row-Container{
-    padding: 0 9rem;
-    color: white;
-    margin-top: 15rem;
-}
-
 .title-AboutMe{
     padding: 2rem 0;
     font-size: 4rem;
@@ -478,17 +435,6 @@ main{
     box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
 }
 
-.contact-Container{
-    margin: 1rem 4rem;
-}
-
-.contact-Row-Container{
-    
-    padding: 0 9rem;
-    color: white;
-    margin-top: 15rem;
-}
-
 .contact-Form{
     background-color: var(--third-azul);
     display: flex;
@@ -497,6 +443,7 @@ main{
     border-radius: 2rem;
     box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
     transition: .5s;
+    color: white;
 }
 
 .contact-Form:hover{
@@ -556,7 +503,6 @@ textarea{
     transform: scale(1.05);
 }
 
-
 .footerContainer{
     padding: 3rem;
     
@@ -571,14 +517,29 @@ textarea{
 
 @media (max-width: 768px) {
     
+    header{
+        padding: 0rem 2.9rem;
+    }
 
     main{
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    .navbar-Container{
-        padding: 1rem 2rem;
+    .navbar-Container {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 0rem 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .off-Canvas-Header{
+        color: white;
+    }
+
+    .off-Canvas{
+        background-color: var(--third-azul) !important;
     }
 
     .navbar-Button{
@@ -684,17 +645,6 @@ textarea{
 
     .p-AboutMe{
         font-size: 1.3rem;
-    }
-
-    .contact-Container{
-        margin: 1rem 0rem;
-    }
-    
-    .contact-Row-Container{
-        
-        padding: 0 1rem;
-        color: white;
-        margin-top: 15rem;
     }
 
     ::placeholder{
