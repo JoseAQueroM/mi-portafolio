@@ -456,7 +456,7 @@ body{
 
 .label-Title{
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .input-Contact{
@@ -467,10 +467,24 @@ body{
     color: white;
     padding-left: 1rem;
     font-size: 1.6rem;
-    margin-top: 2rem;
 }
 
 .input-Contact:focus{
+    outline: none;
+}
+
+.input-ContactText{
+    border: 2px var(--primary-azul) solid;
+    background-color: var(--third-azul);
+    height: 3rem;
+    border-radius: .5rem;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.input-ContactText:focus{
     outline: none;
 }
 
@@ -544,14 +558,20 @@ textarea{
 
     .off-Canvas{
         background-color: var(--third-azul) !important;
-        
-      
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 65% !important;
+        transition: all 0.4s ease;
     }
 
     .navbar-Button{
-        font-size: 1.1rem;
-        padding: 1rem 1rem;
+        font-size: 2rem;
         letter-spacing: 0;
+    }
+
+    .nav-item{
+        padding-top: 2rem;
     }
 
     
@@ -651,6 +671,14 @@ textarea{
 
     .p-AboutMe{
         font-size: 1.3rem;
+    }
+
+    .input-Contact{
+        font-size: 1.4rem;
+    }
+
+    .input-ContactText{
+        font-size: 1.4rem;
     }
 
     ::placeholder{
