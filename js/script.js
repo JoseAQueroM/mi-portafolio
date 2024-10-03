@@ -1,12 +1,4 @@
-window.addEventListener('beforeunload', function(e) {
-    history.scrollRestoration = "manual";
-    window.scrollTo(0, 0);
 
-    
-  });
-
-  
-  
 const nameId = document.getElementById('nameId');
 let texto = 'Jose Quero';
 
@@ -32,7 +24,7 @@ const nameLetras = (elemento, texto , i = 0) => {
 nameLetras(nameId,texto);
 
 document.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar-Links');
+    const navbar = document.querySelector('.navbar-Button');
     const scrollPosition = window.scrollY;
     if (scrollPosition > 100) { 
         navbar.classList.add('scrolled');
