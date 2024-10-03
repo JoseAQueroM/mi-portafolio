@@ -1,4 +1,12 @@
 
+window.addEventListener('beforeunload', function(e) {
+    history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
+
+    
+  });
+
+
 const nameId = document.getElementById('nameId');
 let texto = 'Jose Quero';
 
