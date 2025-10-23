@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
 </head>
 
@@ -385,7 +386,10 @@
 
 
 
-                                <p class="project-Description mb-4">Sistema de inventario diseñado para gestionar eficientemente el control de entradas y salidas de productos utilizados, con capacidad integrada para generar reportes y exportarlos en formato PDF para facilitar auditorías.</p>
+                                <p class="project-Description mb-4">Sistema de inventario diseñado para gestionar
+                                    eficientemente el control de entradas y salidas de productos utilizados, con
+                                    capacidad integrada para generar reportes y exportarlos en formato PDF para
+                                    facilitar auditorías.</p>
 
                                 <!-- <hr class="linear-Card" /> -->
 
@@ -554,7 +558,7 @@
                                     información detallada de Pokémon. Incluye listado de criaturas y detalles completos
                                     de cada Pokémon.
                                 </p>
-<!-- 
+                                <!-- 
                                 <hr class="linear-Card" /> -->
 
 
@@ -631,7 +635,9 @@
 
 
                                 <p class="project-Description mb-4">
-                                    Aplicación de lista de tareas desarrollada con Flutter y Dart para gestionar actividades diarias, con funciones de agregar, editar, eliminar y marcar como completadas.
+                                    Aplicación de lista de tareas desarrollada con Flutter y Dart para gestionar
+                                    actividades diarias, con funciones de agregar, editar, eliminar y marcar como
+                                    completadas.
                                 </p>
 
                                 <!-- <hr class="linear-Card" /> -->
@@ -936,12 +942,10 @@
                 </h2>
 
                 <div class="col-12 col-md-6" data-aos="zoom-in">
-
-                    <form action="https://formspree.io/f/xdknjaba" method="post">
-
+                    <form onsubmit="enviarEmail(event)">
                         <div class="contact-Form p-4">
                             <label class="label-Title mb-3" for="nombre">Nombre</label>
-                            <input class="input-Contact" type="text" name="name" id="nombre"
+                            <input class="input-Contact" type="text" name="from_name" id="nombre"
                                 placeholder="Ingresa tu nombre" required>
 
                             <label class="label-Title mb-3" for="correo">Correo Electrónico</label>
@@ -953,9 +957,11 @@
                                 placeholder="Ingresa tu mensaje" required></textarea>
 
                             <button type="submit" class="button-Enviar col-md-3 col-6 mb-3">Enviar</button>
-                        </div>
 
+
+                        </div>
                     </form>
+
                 </div>
 
             </div>
@@ -984,6 +990,7 @@
         </div>
     </div>
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/arriba.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -993,11 +1000,72 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
     <script>
         AOS.init({
             duration: 600
         });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('r0R7mT31beU2buU3U');
+    </script>
+
+    <script>
+        function enviarEmail(e) {
+            e.preventDefault();
+
+            const btn = e.target.querySelector('button[type="submit"]');
+            const textoOriginal = btn.textContent;
+
+            // Cambiar estado del botón
+            btn.textContent = 'Enviando...';
+            btn.disabled = true;
+
+            // Enviar email
+            emailjs.sendForm('service_icb7tg8', 'template_i4v0ywm', e.target)
+                .then(function () {
+                    Toastify({
+                        text: "✅ Mensaje enviado correctamente.",
+                        duration: 2000,
+                        gravity: "bottom",
+                        position: "right",
+                        backgroundColor: "#172c54",
+                        stopOnFocus: true,
+                        style: {
+                            fontSize: "16px",
+                            fontWeight: "bold",
+
+                        }
+                    }).showToast();
+
+                    e.target.reset(); 
+                    btn.textContent = textoOriginal;
+                    btn.disabled = false;
+
+                }, function (error) {
+                    Toastify({
+                        text: "❌ No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+                        duration: 2000,
+                        gravity: "bottom",
+                        position: "right",
+                        backgroundColor: "#ef4444",
+                        stopOnFocus: true,
+                        style: {
+                            fontSize: "16px",
+                            fontWeight: "bold",
+                        }
+                    }).showToast();
+
+                    btn.textContent = textoOriginal;
+                    btn.disabled = false;
+                });
+
+            return false;
+        }
     </script>
 
 </footer>

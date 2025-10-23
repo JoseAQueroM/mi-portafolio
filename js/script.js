@@ -62,3 +62,5 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav(); 
 
+
+
