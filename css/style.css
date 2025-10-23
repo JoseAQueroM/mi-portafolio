@@ -296,12 +296,10 @@ body{
 }
 
 .badge-Projects{
-    background-color: var(--third-azul);
     border: 2px var(--border-azul) solid;
     text-align: center;
-    border-radius: none;
-background-color: rgb(1, 38, 66); /* 60% opacidad */
-
+    border-radius: none;    
+    background-color: rgb(1, 38, 66); 
 }
 
 .badge-Container{
@@ -346,7 +344,7 @@ background-color: rgb(1, 38, 66); /* 60% opacidad */
     position: absolute;
     top: 12px;
     right: 15px;
-    background: var(--secundary-azul);
+    background-color: rgb(1, 38, 66);
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 50px;
@@ -357,13 +355,14 @@ background-color: rgb(1, 38, 66); /* 60% opacidad */
     align-items: center; /* Esto centra verticalmente */
     gap: 0.4rem;
     z-index: 10;
+    border: 2px var(--border-azul) solid;
 }
 
 .badge-movil {
     position: absolute;
     top: 12px;
     right: 15px;
-    background: var(--secundary-azul);
+    background-color: rgb(1, 38, 66);
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 50px;
@@ -374,6 +373,7 @@ background-color: rgb(1, 38, 66); /* 60% opacidad */
     align-items: center; /* Esto centra verticalmente */
     gap: 0.4rem;
     z-index: 10;
+    border: 2px var(--border-azul) solid;
 }
 
 .badge-Point{
