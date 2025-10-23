@@ -455,9 +455,9 @@ body{
 
 .card-Stack{
     background-image: linear-gradient(135deg, #13203d, #19315e);    
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25),
-                0 10px 15px rgba(0, 0, 0, 0.15);  
-    border-radius: 2rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1),
+                0 10px 15px rgba(0, 0, 0, 0.1);  
+    border-radius: 1.5rem;
     transition: .3s;
     border: 1px var(--border-azul) solid;
     text-align: center;
@@ -672,6 +672,11 @@ textarea{
     .experience-Container-Info{
         margin-bottom: 3rem;
     }
+
+    .card-img-top{
+        height: 180px;
+    }
+
 
     .description-Experience{
         margin-bottom: 8rem;
