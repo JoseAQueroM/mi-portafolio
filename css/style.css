@@ -576,6 +576,12 @@ textarea{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.toast-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
 .button-Enviar:hover{
     box-shadow: 1px 0px 12px 6px rgba(20, 80, 122, 0.75);
     border-radius: 15px;
@@ -751,6 +757,10 @@ textarea{
 
     .button-Enviar{
         padding: 0;
+    }
+
+    .toast-text {
+        font-size: 1.2rem;
     }
     
     .row{
