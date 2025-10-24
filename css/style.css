@@ -512,6 +512,26 @@ body{
     color: white;
 }
 
+.title-Contact{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.885);
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    font-family: 'Merriweather', monospace;
+    margin-top: 2rem;
+}
+
+.text-Contact{
+    font-size: 1.5rem;
+    color: rgb(209, 205, 205);
+    line-height: 2.3rem;
+    letter-spacing: .1rem;
+    text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+    margin-top: 1rem;
+    padding-right: 5rem;
+}
+
 /* .contact-Form:hover{
     transform: scale(1.05);
 } */
@@ -758,6 +778,10 @@ textarea{
         color: white;
         font-size: 1.1rem;
         padding-left: .1rem;
+    }
+
+    .contact-Form{
+        margin-top: 25px;
     }
 
     .button-Enviar{
