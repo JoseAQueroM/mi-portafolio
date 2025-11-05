@@ -441,12 +441,29 @@ body{
     height: 22.5rem;
 }
 
+
 .p-AboutMe{
     font-size: 1.5rem;
     color: rgb(209, 205, 205);
     line-height: 2.3rem;
     letter-spacing: .1rem;
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
+}
+
+
+
+.tecnology-Card {
+  border: 1px var(--border-azul) solid;
+  border-radius: 0.6rem;
+  background-image: linear-gradient(135deg, #13203d, #19315e);
+  padding: 1rem;
+  height: 100%; 
+}
+
+.h5-Tecnology{
+    font-size: 1.4rem;
+    color: rgb(209, 205, 205);
+    text-align: center;
 }
 
 .strong-AboutMe{
@@ -474,7 +491,7 @@ body{
 } */
 
 .title-Stack{
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 1rem;
     color: rgba(255, 255, 255, 0.885);
     text-shadow: 2px 2px 5px rgba(30, 29, 29, 0.5);
@@ -492,12 +509,14 @@ body{
     margin-top: 1rem;
 }
 
+
+
 .icon-Tecnologias{
-    background-color: white;
-    border-radius: 4rem;
-    border: 2px solid black;
+    background-color: var(--third-azul);
+    border-radius: 1rem;
+    border: 1px solid var(--border-azul);
     padding: .4rem;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .contact-Form{
@@ -511,6 +530,7 @@ body{
     transition: .5s;
     color: white;
 }
+
 
 .title-Contact{
     font-size: 2rem;
@@ -739,6 +759,10 @@ textarea{
         color: white;
     }
 
+    .tecnology-Container{
+        padding-right: .5rem !important;
+    }
+
     .projects-Row-Container{
         padding: 0 ;
         color: white;
@@ -766,6 +790,10 @@ textarea{
         font-size: 1.35rem;
     }
 
+    .title-Stack{
+        font-size: 1.6rem;
+    }
+
     .input-Contact{
         font-size: 1.4rem;
     }
@@ -778,6 +806,10 @@ textarea{
         color: white;
         font-size: 1.1rem;
         padding-left: .1rem;
+    }
+
+    .contact-Container{
+        padding: 0 !important;
     }
 
     .contact-Form{
